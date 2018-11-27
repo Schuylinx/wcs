@@ -15,9 +15,6 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
-  "dependencies": {
-    "npm": "^6.4.1"
-  },
   "devDependencies": {
     "@stencil/core": "^0.15.2",
     "tslint": "^5.11.0",
@@ -25,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SNCFDevelopers/wcs-sandbox"
+    "url": "git+https://github.com/SNCFDevelopers/wcs"
   },
   "author": "SNCF",
   "license": "MIT"

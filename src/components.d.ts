@@ -8,15 +8,20 @@
 import '@stencil/core';
 
 
+import {
+  ButtonType,
+} from './interface';
 
 
 export namespace Components {
 
   interface WcsButton {
     'href': string;
+    'type': ButtonType;
   }
   interface WcsButtonAttributes extends StencilHTMLAttributes {
     'href'?: string;
+    'type'?: ButtonType;
   }
 
   interface WcsCardBody {}
@@ -24,6 +29,18 @@ export namespace Components {
 
   interface WcsCard {}
   interface WcsCardAttributes extends StencilHTMLAttributes {}
+
+  interface WcsApp {}
+  interface WcsAppAttributes extends StencilHTMLAttributes {}
+
+  interface WcsSelect {
+    'options': any[];
+    'placeholder': string;
+  }
+  interface WcsSelectAttributes extends StencilHTMLAttributes {
+    'options'?: any[];
+    'placeholder'?: string;
+  }
 }
 
 declare global {
@@ -31,12 +48,16 @@ declare global {
     'WcsButton': Components.WcsButton;
     'WcsCardBody': Components.WcsCardBody;
     'WcsCard': Components.WcsCard;
+    'WcsApp': Components.WcsApp;
+    'WcsSelect': Components.WcsSelect;
   }
 
   interface StencilIntrinsicElements {
     'wcs-button': Components.WcsButtonAttributes;
     'wcs-card-body': Components.WcsCardBodyAttributes;
     'wcs-card': Components.WcsCardAttributes;
+    'wcs-app': Components.WcsAppAttributes;
+    'wcs-select': Components.WcsSelectAttributes;
   }
 
 
@@ -58,16 +79,32 @@ declare global {
     new (): HTMLWcsCardElement;
   };
 
+  interface HTMLWcsAppElement extends Components.WcsApp, HTMLStencilElement {}
+  var HTMLWcsAppElement: {
+    prototype: HTMLWcsAppElement;
+    new (): HTMLWcsAppElement;
+  };
+
+  interface HTMLWcsSelectElement extends Components.WcsSelect, HTMLStencilElement {}
+  var HTMLWcsSelectElement: {
+    prototype: HTMLWcsSelectElement;
+    new (): HTMLWcsSelectElement;
+  };
+
   interface HTMLElementTagNameMap {
     'wcs-button': HTMLWcsButtonElement
     'wcs-card-body': HTMLWcsCardBodyElement
     'wcs-card': HTMLWcsCardElement
+    'wcs-app': HTMLWcsAppElement
+    'wcs-select': HTMLWcsSelectElement
   }
 
   interface ElementTagNameMap {
     'wcs-button': HTMLWcsButtonElement;
     'wcs-card-body': HTMLWcsCardBodyElement;
     'wcs-card': HTMLWcsCardElement;
+    'wcs-app': HTMLWcsAppElement;
+    'wcs-select': HTMLWcsSelectElement;
   }
 
 

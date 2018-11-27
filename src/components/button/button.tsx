@@ -1,6 +1,6 @@
 import { Component, Prop } from '@stencil/core';
+import { ButtonType } from '../../interface';
 
-export type ButtonType = 'button' | 'submit';
 
 @Component({
     tag: 'wcs-button'
