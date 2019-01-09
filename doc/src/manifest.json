@@ -1,6 +1,6 @@
 {
-  "name": "doc",
-  "short_name": "doc",
+  "name": "Stencil Starter",
+  "short_name": "Stencil",
   "start_url": "/",
   "display": "standalone",
   "icons": [{
@@ -8,6 +8,6 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "background_color": "#488aff",
-  "theme_color": "#488aff"
+  "background_color": "#16161d",
+  "theme_color": "#16161d"
 }

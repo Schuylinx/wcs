@@ -8,25 +8,27 @@ describe('app-profile', () => {
   describe('normalization', () => {
     it('returns a blank string if the name is undefined', () => {
       const component = new AppProfile();
-      expect(component.formattedName()).toEqual('');
+      expect(component.normalize(undefined)).toEqual('');
+    });
+
+    it('returns a blank string if the name is null', () => {
+      const component = new AppProfile();
+      expect(component.normalize(null)).toEqual('');
     });
 
     it('capitalizes the first letter', () => {
       const component = new AppProfile();
-      component.name = 'quincy';
-      expect(component.formattedName()).toEqual('Quincy');
+      expect(component.normalize('quincy')).toEqual('Quincy');
     });
 
     it('lower-cases the following letters', () => {
       const component = new AppProfile();
-      component.name = 'JOSEPH';
-      expect(component.formattedName()).toEqual('Joseph');
+      expect(component.normalize('JOSEPH')).toEqual('Joseph');
     });
 
     it('handles single letter names', () => {
       const component = new AppProfile();
-      component.name = 'q';
-      expect(component.formattedName()).toEqual('Q');
+      expect(component.normalize('q')).toEqual('Q');
     });
   });
 });

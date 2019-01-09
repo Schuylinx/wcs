@@ -1,0 +1,113 @@
+{
+  "components": [
+    {
+      "tag": "wcs-badge",
+      "docs": "",
+      "readme": "# wcs-badge\n\n\n",
+      "usage": {},
+      "props": [
+        {
+          "name": "color",
+          "type": "string",
+          "mutable": true,
+          "attr": "color",
+          "docs": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "wcs-button",
+      "docs": "Button component, can also be a link when specifying href.",
+      "readme": "# wcs-button\n\nWhat if we add some documentation.\n\nI mean will it even blend ?\n",
+      "usage": {},
+      "props": [
+        {
+          "name": "color",
+          "type": "string",
+          "attr": "color",
+          "docs": "Specify the button color."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "attr": "disabled",
+          "docs": "Specify wether the button is disabled or not."
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "attr": "href",
+          "docs": "Set a URL to point to.\nIf specified use a `a` tag instead of `btn`."
+        },
+        {
+          "name": "mode",
+          "type": "\"block\" | \"icon-only\" | \"normal\" | \"round\" | \"small\"",
+          "attr": "mode",
+          "docs": "This attribute specifies the size of the button.\nSetting this attribute will change the height and padding of a button."
+        },
+        {
+          "name": "ripple",
+          "type": "boolean",
+          "attr": "ripple",
+          "docs": "Specify wether the button should have a ripple effect or not."
+        },
+        {
+          "name": "type",
+          "type": "\"button\" | \"submit\"",
+          "mutable": true,
+          "attr": "type",
+          "docs": "Specify the button type."
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "wcs-card",
+      "docs": "",
+      "readme": "# wcs-card\n\n\n",
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "wcs-card-body",
+      "docs": "",
+      "readme": "# wcs-card-body\n\n\n",
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "styles": []
+    },
+    {
+      "tag": "wcs-icon",
+      "docs": "",
+      "readme": "# wcs-icon\n\n\n",
+      "usage": {},
+      "props": [
+        {
+          "name": "icon",
+          "type": "string",
+          "attr": "icon",
+          "docs": ""
+        },
+        {
+          "name": "size",
+          "type": "\"140px\" | \"1x\" | \"1x2\" | \"1x5\" | \"1x7\" | \"2x\" | \"30px\" | \"3x\" | \"50px\" | \"66px\" | \"90px\" | \"96px\" | \"x5\" | \"x75\"",
+          "attr": "size",
+          "docs": ""
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "styles": []
+    }
+  ]
+}

@@ -1,22 +1,17 @@
 {
-  "name": "wcs-doc",
+  "name": "doc",
   "private": true,
   "version": "0.0.1",
-  "description": "WCS documentation project",
-  "license": "MIT",
-  "files": [
-    "dist/"
-  ],
+  "description": "Stencil App Starter",
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watch"
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "@ionic/core": "4.0.0-rc.0"
+    "@stencil/core": "~0.16.2",
+    "@stencil/router": "~0.3.1"
   },
-  "devDependencies": {
-    "@stencil/core": "0.16.1"
-  }
+  "license": "MIT"
 }

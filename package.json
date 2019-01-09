@@ -1,0 +1,6 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build-docs": "cd ./lib && npm run build:docs-json -- ../doc/src/assets/docs.json"
+  }
+}

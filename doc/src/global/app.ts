@@ -1,7 +1,4 @@
-import '@ionic/core';
+import { defineCustomElements } from 'wcs/dist/loader';
 
-// import { setupConfig } from '@ionic/core';
+defineCustomElements(window);
 
-// setupConfig({
-//   mode: 'ios'
-// });
